@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_08032021/costruttore.cpp">
+			<Option target="lez_08032021"/>
+		</Unit>
 		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_08032021/main.cpp">
 			<Option target="lez_08032021"/>
 		</Unit>

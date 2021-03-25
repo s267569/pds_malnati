@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lez_08032021.dir/costruttore.cpp.o"
   "CMakeFiles/lez_08032021.dir/main.cpp.o"
   "lez_08032021"
   "lez_08032021.pdb"

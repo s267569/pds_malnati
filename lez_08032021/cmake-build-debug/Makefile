@@ -143,6 +143,33 @@ lez_08032021/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lez_08032021.dir/build.make CMakeFiles/lez_08032021.dir/build
 .PHONY : lez_08032021/fast
 
+costruttore.o: costruttore.cpp.o
+
+.PHONY : costruttore.o
+
+# target to build an object file
+costruttore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lez_08032021.dir/build.make CMakeFiles/lez_08032021.dir/costruttore.cpp.o
+.PHONY : costruttore.cpp.o
+
+costruttore.i: costruttore.cpp.i
+
+.PHONY : costruttore.i
+
+# target to preprocess a source file
+costruttore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lez_08032021.dir/build.make CMakeFiles/lez_08032021.dir/costruttore.cpp.i
+.PHONY : costruttore.cpp.i
+
+costruttore.s: costruttore.cpp.s
+
+.PHONY : costruttore.s
+
+# target to generate assembly for a file
+costruttore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lez_08032021.dir/build.make CMakeFiles/lez_08032021.dir/costruttore.cpp.s
+.PHONY : costruttore.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lez_08032021"
+	@echo "... costruttore.o"
+	@echo "... costruttore.i"
+	@echo "... costruttore.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
