@@ -4,8 +4,10 @@
 #include "Message.h"
 
 int main() {
-    Message m1(1);
+    Message m1(5);
+    Message m2(10);
 
-    std::cout << "id: " << m1.getId() << std::endl;
-    std::cout << "message: " << m1.getMessage() << std::endl;
+    std::cout << m1 << std::endl << m2 << std::endl;
+    //std::cout << "id: " << m1.getId() << " message: " << m1.getMessage() << std::endl;
+    //std::cout << "id: " << m2.getId() << " message: " << m2.getMessage() << std::endl;
 }

@@ -19,13 +19,14 @@ public:
     Message(long id, char* buf, int size);
     Message(int size);
     char* mkMessage(int n);
-    int getId();
-    char* getMessage();
+    int getId() const;
+    int getSize() const;
+    char* getMessage() const;
 
     ~Message(){
-        std::cout << "sono nel distruttore" << std::endl;
+        //std::cout << "sono nel distruttore" << std::endl;
         delete[] buf;
     }
 };
-
+std::ostream& operator<<(std::ostream& out, const Message& m);
 #endif //LAB1_MESSAGE_H
