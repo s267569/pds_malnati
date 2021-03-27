@@ -23,6 +23,7 @@ public:
     int getSize() const;
     char* getMessage() const;
 
+    Message(const Message& source);
     ~Message(){
         //std::cout << "sono nel distruttore" << std::endl;
         delete[] buf;
