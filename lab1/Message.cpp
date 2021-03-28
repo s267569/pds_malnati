@@ -24,8 +24,14 @@ Message::Message(int size){
 
 //costruttore di movimento
 Message::Message(Message&& source){
-    //da implementare...
+    std::cout << "movimento oggetto dall'indirizzo " << &source << " all'indirizzo" << this << std::endl;
+    this->size = source.size;
+    this->id = source.id;
+    this->buf = source.buf;
+    source.buf = NULL;
 }
+
+
 int Message::getId() const{
     return id;
 }

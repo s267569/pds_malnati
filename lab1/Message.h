@@ -25,6 +25,17 @@ public:
 
     Message(const Message& source);
     Message(Message&& source);
+    Message& operator=(const Message& source){ //operatore di assegnazione
+        if (this != &source){
+            delete[] this->buf;
+            this->buf = NULL;
+            this->id = source.id;
+            this->size = source.size;
+            this->buf = new char[size];
+            memcpy(this->buf, source.buf, size);
+        }
+        return *this;
+    }
     ~Message(){
         //std::cout << "sono nel distruttore" << std::endl;
         delete[] buf;
