@@ -12,6 +12,7 @@ Message::Message(long id, char* buf, int size){
     id_counter++;
 }
 
+//costruttore di copia
 Message::Message(int size){
     std::cout << "costruzione oggetto all'indirizzo " << this << std::endl;
     id = id_counter;
@@ -19,6 +20,11 @@ Message::Message(int size){
     this->size = size;
     buf = mkMessage(size);
     id_counter++;
+}
+
+//costruttore di movimento
+Message::Message(Message&& source){
+    //da implementare...
 }
 int Message::getId() const{
     return id;
