@@ -15,12 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Message.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Message.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Message.h" beforeDir="false" afterPath="$PROJECT_DIR$/Message.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/Message.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/Message.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lez_26032021/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lez_26032021/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +48,9 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="lab1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab1" TARGET_NAME="lab1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab1" RUN_TARGET_NAME="lab1">
@@ -81,7 +78,8 @@
       <workItem from="1616838745760" duration="1379000" />
       <workItem from="1616857042563" duration="1817000" />
       <workItem from="1616959616774" duration="789000" />
-      <workItem from="1616960457349" duration="1393000" />
+      <workItem from="1616960457349" duration="1449000" />
+      <workItem from="1617046450345" duration="1929000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1616769396743</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616858593001</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab1 - operatore di assegnazione (da verificare)">
+      <created>1616961883487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616961883487</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +135,7 @@
     <MESSAGE value="lab1 - costruttore e distruttore" />
     <MESSAGE value="lab1 - fino alla stampa" />
     <MESSAGE value="lab1 - costruttore di copia" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab1 - costruttore di copia" />
+    <MESSAGE value="lab1 - operatore di assegnazione (da verificare)" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab1 - operatore di assegnazione (da verificare)" />
   </component>
 </project>

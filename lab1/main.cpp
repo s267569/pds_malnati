@@ -9,8 +9,13 @@ int main() {
 
     std::cout << m1 << std::endl << m2 << std::endl;
 
-    Message m3{m1};
+    Message m3(6);
+    m3 = std::move(m1); //prova assegnazione per movimento
+
+    //m3 = m2; //prova assegnazione
     std::cout << m3 << std::endl;
-    //std::cout << "id: " << m1.getId() << " message: " << m1.getMessage() << std::endl;
-    //std::cout << "id: " << m2.getId() << " message: " << m2.getMessage() << std::endl;
+
+    Message m4 = std::move(m2); //prova costruttore di movimento
+    std::cout << m4 << std::endl;
+
 }

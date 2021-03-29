@@ -12,7 +12,6 @@ Message::Message(long id, char* buf, int size){
     id_counter++;
 }
 
-//costruttore di copia
 Message::Message(int size){
     std::cout << "costruzione oggetto all'indirizzo " << this << std::endl;
     id = id_counter;
@@ -21,7 +20,6 @@ Message::Message(int size){
     buf = mkMessage(size);
     id_counter++;
 }
-
 //costruttore di movimento
 Message::Message(Message&& source){
     std::cout << "movimento oggetto dall'indirizzo " << &source << " all'indirizzo" << this << std::endl;
@@ -55,7 +53,8 @@ char* Message::mkMessage(int n){
     m[n] = 0 ;
     return m;
 }
-
+//costruttore di copia
+/*
 Message::Message(const Message& source){
     std::cout << "costruzione di copia all'indirizzo " << this
               << " a partire da un oggetto all'indirizzo " << &source << std::endl;
@@ -63,9 +62,8 @@ Message::Message(const Message& source){
     id = source.id;
     buf = new char[source.size];
     memcpy(this->buf, source.buf, size);
-
-
 }
+*/
 
 std::ostream& operator<<(std::ostream& out, const Message& m){
     out << "[id: " << m.getId() << "] ";

@@ -23,10 +23,11 @@ public:
     int getSize() const;
     char* getMessage() const;
 
-    Message(const Message& source);
-    Message(Message&& source);
+    //Message(const Message& source); //costruttore di copia
+    Message(Message&& source); //costruttore di movimento
     Message& operator=(const Message& source){ //operatore di assegnazione
         if (this != &source){
+            std::cout << "op. di assegnazione Message @" << this << " = Message @" << (void *)&source << std::endl;
             delete[] this->buf;
             this->buf = NULL;
             this->id = source.id;
@@ -36,8 +37,19 @@ public:
         }
         return *this;
     }
+    Message& operator=(Message &&source){ //operatore di assegnazione per movimento
+        if (this != &source){
+            std::cout << "op. di assegnazione per movimento Message @" << this << " = Message @" << (void *)&source << std::endl;
+            delete[] this->buf;
+            this->size = source.size;
+            this->id = source.id;
+            this->buf = source.buf;
+            source.buf=NULL;
+        }
+        return *this;
+    }
     ~Message(){
-        //std::cout << "sono nel distruttore" << std::endl;
+        std::cout << "distruggo Message @" << this << std::endl;
         delete[] buf;
     }
 };
