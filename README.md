@@ -2,7 +2,6 @@
 
 # Codice di laboratori e lezioni - Prof. Malnati
 
-In questo repository ci sono codici presentati a lezione per meglio capire le nozioni e anche soluzioni di laboratori svolte da me.
+# Programma svolto
 
-- Lezione 1: 08/03/2021 (API Programming)
--
+- Introduzione al linguaggio C: costruttori, distruttori, operatori di assegnazione per movimento e non, costruttore di copia e di movimento
