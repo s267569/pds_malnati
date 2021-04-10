@@ -17,11 +17,14 @@ class MessageStore{
 public:
     MessageStore(int n);
     ~MessageStore();
-    void add(Message &m); //inserisce o sovrascrive un nuovo msg se c'è uno con lo stesso id
-    std::optional<Message> get(long id); //restituisce un messaggio se già presente
-    bool remove(long id); //cancella un messaggio se già presente
-    std::tuple<int, int> stats(); //restituisce il num di msg validi e di elementi vuoti ancora disponibili
-    void compact(); //compatta l'array (elimina le celle vuote e riporta l'array alla dimensione multiplo di n minimia in grado di contenere tutte le celle)
+    void add(Message &m);                   //inserisce o sovrascrive un nuovo msg se c'è uno con lo stesso id
+    std::optional<Message> get(long id);   //restituisce un messaggio se già presente
+    bool remove(long id);                 //cancella un messaggio se già presente
+    std::tuple<int, int> stats();        //restituisce il num di msg validi e di elementi vuoti ancora disponibili
+    void compact();                     //compatta l'array (elimina le celle vuote e riporta l'array alla dimensione multiplo di n minimia in grado di contenere tutte le celle)
+    void printAll();
+    int getN();
+    int getSize();
 };
 
 #endif //LAB1_MESSAGESTORE_H

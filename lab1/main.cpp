@@ -49,10 +49,18 @@ int main() {
     std::cout << m4 << std::endl;
     */
 
-    MessageStore ms1(10);
-    Message m1(10);
+   MessageStore ms1(2);
+   Message m1(5); //id=0
+   Message m2(6); //id=1
+   Message m3(7);
 
-    ms1.add(m1);
-    ms1.get(0);
+   ms1.add(m1);
+   ms1.add(m2);
+   ms1.add(m3);
+   //la funzione get in MessageStore ritorna std::optional, di seguito una possibile verifica.
+   if(auto str = ms1.get(2)){
+       std::cout << "ms1(true) returned " << *str << '\n';
+   }
+   std::cout << "n: " << ms1.getN() << " dim: " << ms1.getSize() << '\n';
 
 }

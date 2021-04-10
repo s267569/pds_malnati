@@ -21,6 +21,7 @@ int MessageStore::find_pos(long id) {
 }
 
 void MessageStore::reallocate(int size){
+    std::cout << "sto facendo la realloc per " << size << " celle" << std::endl;
     Message* new_messages = new Message[size];
     int src=0, dst=0;
 
@@ -39,7 +40,7 @@ void MessageStore::reallocate(int size){
 
 //passaggio per riferimento
 void MessageStore::add(Message &m) { //inserisce o sovrascrive un nuovo msg se c'è uno con lo stesso id
-    std::cout << "sono in add() di MessageStore @" << this << std::endl;
+    std::cout << "sono in add() di MessageStore @" << this << " id: " << m.getId() << std::endl;
     int pos = find_pos(-1);
 
     if(pos<0){
@@ -52,7 +53,7 @@ void MessageStore::add(Message &m) { //inserisce o sovrascrive un nuovo msg se c
 
 std::optional<Message> MessageStore::get(long id) { //restituisce un messaggio se già presente
     std::cout << "sono in get() di MessageStore @" << this << std::endl;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<dim; i++){
         if(messages[i].getId()==id)
             return messages[i];
     }
@@ -61,13 +62,13 @@ std::optional<Message> MessageStore::get(long id) { //restituisce un messaggio s
 
 bool MessageStore::remove(long id) { //cancella un messaggio se già presente
     int flag=-1;
-    std::cout << "sono in remove() di MessageStore @" << this << std::endl;
-    for(int i=0; i<n; i++){
+    std::cout << "sono in remove() di MessageStore @" << this << " id: " << id << std::endl;
+    for(int i=0; i<dim; i++){
         if(messages[i].getId()==id)
             flag=i;
     }
     if(flag!=-1){
-        messages[flag] = Message();
+        messages[flag] = Message(); //viene sostituito con un msg vuoto
         return true;
     }
     return false;
@@ -88,4 +89,18 @@ void MessageStore::compact() { //compatta l'array (elimina le celle vuote e ripo
         int new_dim = (count/n+1)*n;
         reallocate(new_dim);
     }
+}
+
+void MessageStore::printAll(){
+    for(int i=0; i<dim; i++){
+        if(messages[i].getId()!=-1)
+            std::cout << messages[i].getMessage() << std::endl;
+    }
+}
+
+int MessageStore::getN(){
+    return this->n;
+}
+int MessageStore::getSize(){
+    return this->dim;
 }

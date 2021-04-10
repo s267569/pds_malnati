@@ -28,7 +28,7 @@ public:
     Message(Message&& source); //costruttore di movimento
     Message& operator=(const Message& source){ //operatore di assegnazione
         if (this != &source){
-            std::cout << "op. di assegnazione Message @" << this << " = Message @" << (void *)&source << std::endl;
+            std::cout << "op. di assegnazione Message @" << this << " = Message @" << (void *)&source << " id: " << source.id << std::endl;
             delete[] this->buf;
             this->buf = NULL;
             this->id = source.id;
@@ -40,7 +40,7 @@ public:
     }
     Message& operator=(Message &&source){ //operatore di assegnazione per movimento
         if (this != &source){
-            std::cout << "op. di assegnazione per movimento Message @" << this << " = Message @" << (void *)&source << std::endl;
+            std::cout << "op. di assegnazione per movimento Message @" << this << " = Message @" << (void *)&source << " id: " << source.id << std::endl;
             delete[] this->buf;
             this->size = source.size;
             this->id = source.id;
