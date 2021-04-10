@@ -16,6 +16,7 @@ class Message{
 private:
     static int id_counter;
 public:
+    Message();
     Message(long id, char* buf, int size);
     Message(int size);
     char* mkMessage(int n);
@@ -23,7 +24,7 @@ public:
     int getSize() const;
     char* getMessage() const;
 
-    //Message(const Message& source); //costruttore di copia
+    Message(const Message& source); //costruttore di copia
     Message(Message&& source); //costruttore di movimento
     Message& operator=(const Message& source){ //operatore di assegnazione
         if (this != &source){

@@ -170,6 +170,33 @@ Message.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/Message.cpp.s
 .PHONY : Message.cpp.s
 
+MessageStore.o: MessageStore.cpp.o
+
+.PHONY : MessageStore.o
+
+# target to build an object file
+MessageStore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/MessageStore.cpp.o
+.PHONY : MessageStore.cpp.o
+
+MessageStore.i: MessageStore.cpp.i
+
+.PHONY : MessageStore.i
+
+# target to preprocess a source file
+MessageStore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/MessageStore.cpp.i
+.PHONY : MessageStore.cpp.i
+
+MessageStore.s: MessageStore.cpp.s
+
+.PHONY : MessageStore.s
+
+# target to generate assembly for a file
+MessageStore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/MessageStore.cpp.s
+.PHONY : MessageStore.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -209,6 +236,9 @@ help:
 	@echo "... Message.o"
 	@echo "... Message.i"
 	@echo "... Message.s"
+	@echo "... MessageStore.o"
+	@echo "... MessageStore.i"
+	@echo "... MessageStore.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

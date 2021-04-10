@@ -5,6 +5,11 @@
 
 int Message::id_counter = 0;
 
+Message::Message() {
+    std::cout << "sono nel costruttore di default @" << this << std::endl;
+    id = -1;
+}
+
 Message::Message(long id, char* buf, int size){
     id = id_counter;
     buf = new char[size];
@@ -54,7 +59,6 @@ char* Message::mkMessage(int n){
     return m;
 }
 //costruttore di copia
-/*
 Message::Message(const Message& source){
     std::cout << "costruzione di copia all'indirizzo " << this
               << " a partire da un oggetto all'indirizzo " << &source << std::endl;
@@ -63,7 +67,6 @@ Message::Message(const Message& source){
     buf = new char[source.size];
     memcpy(this->buf, source.buf, size);
 }
-*/
 
 std::ostream& operator<<(std::ostream& out, const Message& m){
     out << "[id: " << m.getId() << "] ";

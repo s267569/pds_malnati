@@ -86,6 +86,12 @@
 		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.h">
 			<Option target="lab1"/>
 		</Unit>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/MessageStore.cpp">
+			<Option target="lab1"/>
+		</Unit>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/MessageStore.h">
+			<Option target="lab1"/>
+		</Unit>
 		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/main.cpp">
 			<Option target="lab1"/>
 		</Unit>

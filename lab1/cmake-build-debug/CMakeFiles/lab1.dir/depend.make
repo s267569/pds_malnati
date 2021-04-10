@@ -4,6 +4,11 @@
 CMakeFiles/lab1.dir/Message.cpp.o: ../Message.cpp
 CMakeFiles/lab1.dir/Message.cpp.o: ../Message.h
 
+CMakeFiles/lab1.dir/MessageStore.cpp.o: ../Message.h
+CMakeFiles/lab1.dir/MessageStore.cpp.o: ../MessageStore.cpp
+CMakeFiles/lab1.dir/MessageStore.cpp.o: ../MessageStore.h
+
 CMakeFiles/lab1.dir/main.cpp.o: ../Message.h
+CMakeFiles/lab1.dir/main.cpp.o: ../MessageStore.h
 CMakeFiles/lab1.dir/main.cpp.o: ../main.cpp
 
