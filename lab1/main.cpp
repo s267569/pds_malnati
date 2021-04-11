@@ -63,4 +63,6 @@ int main() {
    }
    std::cout << "n: " << ms1.getN() << " dim: " << ms1.getSize() << '\n';
    ms1.remove(1);
+   ms1.remove(2);
+   ms1.compact();
 }

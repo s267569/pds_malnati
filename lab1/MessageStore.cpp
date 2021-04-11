@@ -68,6 +68,7 @@ bool MessageStore::remove(long id) { //cancella un messaggio se già presente
             flag=i;
     }
     if(flag!=-1){
+        std::cout << "flag: " << flag << std::endl;
         messages[flag] = Message(); //viene sostituito con un msg vuoto
         return true;
     }
@@ -77,18 +78,19 @@ bool MessageStore::remove(long id) { //cancella un messaggio se già presente
 
 void MessageStore::compact() { //compatta l'array (elimina le celle vuote e riporta l'array alla dimensione multiplo di n minimia in grado di contenere tutte le celle)
     int count=0;
+    int new_dim;
 
     for(int i=0; i<dim; i++){
-        if (messages[i].getId()==-1){
-            count++;
-        }
+        count += messages[i].getId()>=0?1:0;
     }
-    if ((count%n)==0){
-        reallocate(count);
-    } else {
-        int new_dim = (count/n+1)*n;
-        reallocate(new_dim);
-    }
+    new_dim = count%n;
+    if (new_dim==0)
+        new_dim = count;
+    else
+        new_dim = (1+count/n)*n;
+
+    std::cout << "sono nella funzione compact() e passo da: " << dim << " a: " << new_dim << std::endl;
+    reallocate(new_dim);
 }
 
 void MessageStore::printAll(){
