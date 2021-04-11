@@ -14,9 +14,7 @@
     <list default="true" id="78c4bffa-1d8c-4615-baeb-9f52e354f1d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Message.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Message.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/Message.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/Message.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1" afterDir="false" />
     </list>
@@ -85,7 +83,7 @@
       <workItem from="1618040643061" duration="14233000" />
       <workItem from="1618126293068" duration="2013000" />
       <workItem from="1618156413747" duration="170000" />
-      <workItem from="1618166951290" duration="820000" />
+      <workItem from="1618166951290" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1616769396743</created>
@@ -164,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618130329339</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lab1 - funzionante">
+      <created>1618168278862</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618168278862</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +185,7 @@
     <MESSAGE value="lab1 - fine parte 1" />
     <MESSAGE value="lab1 - fine" />
     <MESSAGE value="lab1 - remove di MessageStore non funziona" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab1 - remove di MessageStore non funziona" />
+    <MESSAGE value="lab1 - funzionante" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab1 - funzionante" />
   </component>
 </project>

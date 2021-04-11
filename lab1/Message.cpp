@@ -9,27 +9,29 @@ Message::Message() {
     std::cout << "sono nel costruttore di default @" << this << std::endl;
     this->id = -1;
     this->size=0;
-    this->buf = new char[0];
+    this->buf = new char[0]; //attenzione: qui potrei anche mettere uguale a nullptr, però poi devo andare in getMessage a modificare
+                            //e fare un if(...==nullptr) return stringa vuota. C'è da capire come far ritornare la str vuota.
 }
 
 Message::Message(long id, char* buf, int size){
     this->id = id_counter;
-    this->buf = new char[size];
+    //this->buf = new char[size+1];
+    this->buf = mkMessage(size);
     this->size = size;
     id_counter++;
 }
 
 Message::Message(int size){
-    std::cout << "costruzione oggetto all'indirizzo " << this << std::endl;
     id = id_counter;
-    this->buf = new char[size];
-    this->size = size+1;
-    this->buf = mkMessage(this->size);
+    //this->buf = new char[size+1];
+    this->size = size;
+    this->buf = mkMessage(this->size); //già viene allocata la nuova char con la new
+    std::cout << "costruzione oggetto all'indirizzo @" << this << " id: " << id_counter << std::endl;
     id_counter++;
 }
 //costruttore di movimento
 Message::Message(Message&& source){
-    std::cout << "movimento oggetto dall'indirizzo " << &source << " all'indirizzo" << this << std::endl;
+    std::cout << "movimento oggetto dall'indirizzo " << &source << " a @" << this << std::endl;
     this->size = source.size;
     this->id = source.id;
     this->buf = source.buf;
