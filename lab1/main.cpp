@@ -52,7 +52,7 @@ int main() {
    MessageStore ms1(2);
    Message m1(5); //id=0
    Message m2(6); //id=1
-   Message m3(7);
+   Message m3(7); //id=2
 
    ms1.add(m1);
    ms1.add(m2);
@@ -62,5 +62,5 @@ int main() {
        std::cout << "ms1(true) returned " << *str << '\n';
    }
    std::cout << "n: " << ms1.getN() << " dim: " << ms1.getSize() << '\n';
-
+   ms1.remove(1);
 }
