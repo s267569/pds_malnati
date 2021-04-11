@@ -6,29 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.cpp
+Message.h
+/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.h
+
 /Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.h
 iostream
 -
 string
 -
-
-/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/MessageStore.h
-Message.h
-/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.h
-optional
--
-
-/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/main.cpp
-iostream
--
-string
--
-cstring
--
-time.h
--
-Message.h
-/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/Message.h
-MessageStore.h
-/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab1/MessageStore.h
 

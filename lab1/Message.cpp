@@ -7,12 +7,14 @@ int Message::id_counter = 0;
 
 Message::Message() {
     std::cout << "sono nel costruttore di default @" << this << std::endl;
-    id = -1;
+    this->id = -1;
+    this->size=0;
+    this->buf = new char[0];
 }
 
 Message::Message(long id, char* buf, int size){
-    id = id_counter;
-    buf = new char[size];
+    this->id = id_counter;
+    this->buf = new char[size];
     this->size = size;
     id_counter++;
 }
@@ -20,9 +22,9 @@ Message::Message(long id, char* buf, int size){
 Message::Message(int size){
     std::cout << "costruzione oggetto all'indirizzo " << this << std::endl;
     id = id_counter;
-    buf = new char[size];
-    this->size = size;
-    buf = mkMessage(size);
+    this->buf = new char[size];
+    this->size = size+1;
+    this->buf = mkMessage(this->size);
     id_counter++;
 }
 //costruttore di movimento
