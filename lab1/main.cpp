@@ -65,4 +65,5 @@ int main() {
    ms1.remove(1);
    ms1.remove(2);
    ms1.compact();
+   ms1.printAvailableMessage(ms1); //stampo solo i msg validi (id!=-1)
 }

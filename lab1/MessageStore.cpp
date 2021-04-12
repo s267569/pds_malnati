@@ -106,3 +106,10 @@ int MessageStore::getN(){
 int MessageStore::getSize(){
     return this->dim;
 }
+
+void MessageStore::printAvailableMessage(MessageStore &ms){
+    for(int i=0; i<ms.getSize(); i++)
+        if(ms.messages[i].getId()!=-1){
+            std::cout << "id: " << ms.messages[i].getId() << " text: " << ms.messages[i].getMessage() << std::endl;
+        }
+}

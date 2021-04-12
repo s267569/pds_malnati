@@ -25,6 +25,7 @@ public:
     void printAll();
     int getN();
     int getSize();
+    void printAvailableMessage(MessageStore &ms);
 };
 
 #endif //LAB1_MESSAGESTORE_H

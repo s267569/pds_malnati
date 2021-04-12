@@ -14,8 +14,8 @@
     <list default="true" id="78c4bffa-1d8c-4615-baeb-9f52e354f1d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageStore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MessageStore.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MessageStore.h" beforeDir="false" afterPath="$PROJECT_DIR$/MessageStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/MessageStore.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/MessageStore.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -85,7 +85,8 @@
       <workItem from="1618040643061" duration="14233000" />
       <workItem from="1618126293068" duration="2013000" />
       <workItem from="1618156413747" duration="170000" />
-      <workItem from="1618166951290" duration="4430000" />
+      <workItem from="1618166951290" duration="4442000" />
+      <workItem from="1618210192890" duration="1107000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1616769396743</created>
@@ -178,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618170020250</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lab1 - funzionante">
+      <created>1618172421125</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618172421125</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
