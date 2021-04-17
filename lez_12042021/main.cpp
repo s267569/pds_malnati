@@ -1,7 +1,6 @@
 #include <iostream>
 
 class Alfa{
-    int v1;
 public:
     void m1(){
         std::cout << "Alfa::m1()" << std::endl;
