@@ -3,6 +3,7 @@
 class Alfa{
     int v1;
 public:
+    //virtual void m1(){
     void m1(){
         std::cout << "Alfa::m1()" << std::endl;
     }
@@ -39,6 +40,7 @@ int main(){
                 //i dati specifici invece non saranno proprio copiati. Che ci sia un seguito lui non lo sa.
                 //Quando invece lavoro con i puntatori l'oggetto rimane com'è e non sto facendo copie.
 
+   //----------------------- RIDEFINIZIONE ----------------------------------------------
    Beta b(5);
    Beta* ptr1 = &b;
    ptr1->m1(); //il compilatore traduce così: Beta__m1(ptr1)
@@ -46,6 +48,8 @@ int main(){
    Alfa* ptr2 = &b;
    ptr2->m1();
 
-   //Però cosa vedo? Quella ereditata o quella ridefinita? Il comportamento di C++ è diverso da Java, qui non si vede
+   //Però cosa vedo? Quella ereditata o quella ridefinita? Il comportamento di C++ è diverso da Java qui infatti ciò che possiamo
+   //vedere è che la prima stampa si rifà a Beta e la seconda ad Alfa. In Java avremmo visto solo la ridefinizione.
+   //Per avere un comportamento uguale al Java dobbiamo dichiarare VIRTUAL il metodo.
    //Beta::m1() ma in C++ non è così.
 }
