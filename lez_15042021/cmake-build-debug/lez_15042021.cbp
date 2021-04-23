@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lez_15042021"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lez_15042021">
+				<Option output="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/lez_15042021" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 lez_15042021"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lez_15042021/fast">
+				<Option output="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/lez_15042021" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 lez_15042021/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lez_15042021/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/main.cpp">
+			<Option target="lez_15042021"/>
+		</Unit>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lez_15042021/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
