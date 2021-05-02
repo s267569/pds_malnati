@@ -11,6 +11,7 @@ Message::Message() {
     this->size=0;
     this->buf = new char[0]; //attenzione: qui potrei anche mettere uguale a nullptr, però poi devo andare in getMessage a modificare
                             //e fare un if(...==nullptr) return stringa vuota. C'è da capire come far ritornare la str vuota.
+    id_counter++;
 }
 
 Message::Message(long id, char* buf, int size){
