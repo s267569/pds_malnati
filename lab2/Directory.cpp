@@ -5,6 +5,7 @@
 #include "Directory.h"
 
 Directory* Directory::root;
+int Directory::livello = 0;
 
 Directory::Directory(std::string name){
     this->name = name;
@@ -72,14 +73,32 @@ bool Directory::move(const std::string &name, Directory* target){
     }
     return false;
 }
-/*
+
+Directory& Directory::operator=(const Directory& source){
+    if(this!=&source){
+        this->name = source.name;
+        padre = source.padre;
+        for (int i=0; i<10; i++){
+            delete this->figli[i];
+            this->figli[i] = nullptr;
+        }
+        for (int i=0; i<10; i++){
+            if (source.figli[i] != nullptr){
+                this->figli[i] = new Directory(*(source.figli[i]));
+            }
+        }
+
+    }
+    return *this;
+}
 Directory::Directory(const Directory& source){
     this->name = source.name;
     this->padre = source.padre;
-    this->figli = source;
-
+    this->figli = new Directory*[10];
+    for(int i=0; i<10; i++){
+        this->figli[i] = new Directory(*(source.figli[i]));
+    }
 }
-*/
 
 bool Directory::copy(const std::string& name, Directory* target){
     bool flag=false;
@@ -87,9 +106,7 @@ bool Directory::copy(const std::string& name, Directory* target){
         if(this->figli[i]->name == name){
             for (int j=0; j<10; j++){
                 if(target->figli[j] == nullptr){
-                    target->figli[j] = this->figli[i];
-                    target->figli[j]->padre = this->figli[i]->padre;
-                    target->figli[j]->name = name;
+                    target->figli[j] = new Directory(*(this->figli[i]));
                     flag = true;
                     return  true;
                 }
@@ -99,4 +116,19 @@ bool Directory::copy(const std::string& name, Directory* target){
         }
     }
     return false;
+}
+
+void Directory::ls(int indenet){
+    for (int j = 0; j < indenet*livello; j++) {
+        std::cout << " ";
+    }
+    std::cout << this->name << std::endl;
+    for (int i=0; i<10; i++){
+        if (this->figli[i]!= nullptr) {
+            livello++;
+            this->figli[i]->ls(indenet);
+            livello--;
+        }
+    }
+
 }

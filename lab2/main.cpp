@@ -4,6 +4,7 @@
 
 int main() {
     Directory* root;
+    auto alfa = root ->addDirectory("alfa");
 
 
     return 0;
