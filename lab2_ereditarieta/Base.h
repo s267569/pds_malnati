@@ -4,8 +4,10 @@
 
 #ifndef LAB2_EREDITARIETA_BASE_H
 #define LAB2_EREDITARIETA_BASE_H
+
 #include <string>
 #include <iostream>
+
 class Base{
     std::string name;
     int type;
@@ -13,13 +15,16 @@ class Base{
     Base(const Base& base) = delete;
     Base(Base&& base) = delete;
 protected:
-    Base(std::string name):name(name);
+    static int level;
+    Base(std::string name):name(name){};
 public:
     std::string getName() const{
         return name;
     }
     virtual int mType() const = 0; //questo metodo in classe Base non ha implementazione
     virtual void ls(int indent) const= 0;
+    virtual ~Base(){}
 
 };
+
 #endif //LAB2_EREDITARIETA_BASE_H
