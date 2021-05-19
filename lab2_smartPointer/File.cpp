@@ -6,6 +6,16 @@
 
 File::File(std::string name, uintmax_t size, uintmax_t date) :Base(name),  size(size), date(date){}
 
+File::File(const File& source): Base(source.getName()){
+    this->date = source.date;
+    this->size = source.size;
+}
+
+File::File(File&& source): Base(source.getName()){
+    this->date = source.date;
+    this->size = source.size;
+}
+
 File::~File() noexcept{};
 
 uintmax_t File::getSize() const{

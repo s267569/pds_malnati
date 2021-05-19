@@ -21,15 +21,14 @@ public:
     explicit Directory(std::string name);
     ~Directory() noexcept;
     static std::shared_ptr<Directory> getRoot();
-    //static bool removeRoot();
     std::shared_ptr<Directory> addDirectory(const std::string& name);
     std::shared_ptr<File> addFile(const std::string & name, uintmax_t size, uintmax_t data);
     std::shared_ptr<Base> get(const std::string & name);
     std::shared_ptr<Directory> getDirectory(const std::string & name);
     std::shared_ptr<File> getFile(const std::string & name);
     bool remove(const std::string & name);
-    bool move(const std::string &name, Directory* target);
-    int mType() const override;
+    bool move(const std::string &name, std::shared_ptr<Directory> dest);
+    bool copy(const std::string& nome, std::shared_ptr<Directory> dest);
     void ls(int indent) const override;
 };
 #endif //LAB2_SMARTPOINTER_DIRECTORY_H

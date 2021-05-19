@@ -9,8 +9,11 @@
 class File : public Base{
     uintmax_t size;
     uintmax_t date;
+    File() = delete;
 public:
     File(std::string name, uintmax_t size, uintmax_t date);
+    File(const File& source);
+    File(File&& source);
     ~File() noexcept;
     uintmax_t getSize() const;
     uintmax_t getDate() const;

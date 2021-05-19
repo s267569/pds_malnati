@@ -39,7 +39,7 @@ std::shared_ptr<Directory> Directory::addDirectory(const std::string& name){
 std::shared_ptr<File> Directory::addFile(const std::string & name, uintmax_t size, uintmax_t data){
     if(name == "." || name == "..") return std::shared_ptr<File>(nullptr);
     auto it = children.find(name);
-    if(it!= children.end())return std::shared_ptr<File>(nullptr);
+    if(it!= children.end()) return std::shared_ptr<File>(nullptr);
 
     std::shared_ptr<File> child = std::make_shared<File>(name, size, data);
     //dobbimo fare un cast
@@ -50,19 +50,69 @@ std::shared_ptr<File> Directory::addFile(const std::string & name, uintmax_t siz
 }
 
 std::shared_ptr<Base> Directory::get(const std::string & name){
-
+    if (name == "."){
+        std::shared_ptr<Directory> s_self = self.lock(); //non c'è bisogno di controllare che sia scaduto xk ci sono io quindi sicuro c'è
+        return static_pointer_cast<Base> (s_self);
+    }
+    if (name == "..") {
+        std::shared_ptr<Directory> s_parent = parent.lock();
+        return static_pointer_cast<Base> (s_parent);
+    }
+    auto it = children.find(name); //ricorda che con C++ puoi usare anche la funzione contains
+    if(it!= children.end())
+        return std::shared_ptr<Base>(nullptr);
+    return it->second;
 }
 std::shared_ptr<Directory> Directory::getDirectory(const std::string & name){
-
+    std::shared_ptr<Base> found = this->get(name);
+    return dynamic_pointer_cast<Directory>(found);
 }
 std::shared_ptr<File> Directory::getFile(const std::string & name){
+    if (name == "." || name == "..") return std::shared_ptr<File> (nullptr);
 
+    std::shared_ptr<Base> found = this->get(name);
+    return dynamic_pointer_cast<File>(found);
 }
 bool Directory::remove(const std::string & name){
+    if(name == "." || name == "..") return false;
+    auto it = children.find(name);
+    if(it == children.end()) return false;
+    children.erase(it);
+    return true;
+}
+bool Directory::move(const std::string &name, std::shared_ptr<Directory> dest){
+    if(name == "." || name == "..") return false;
+    auto it = this->children.find(name);
+    if(it == this->children.end()) return false;
+
+    //il padre di mio figlio sarà destinazione
+    std::shared_ptr<Base> base_child = it->second;
+    if(base_child->mType()!=1){
+        std::shared_ptr<Directory> child = static_pointer_cast<Directory>(base_child);
+        child->parent = dest; //qui andrebbe bene anche usare dest->self, lui capisce lo stesso perché in questo caso dest è uno shared_ptr e va bene, se avessimo avuto un Directory* come prima allora avremmo dovuto mettere dest->self
+    }
+    dest->children.insert(std::pair<std::string, std::shared_ptr<Base>>(name, base_child));
+    this->children.erase(it);
+    return true;
+}
+
+bool Directory::copy(const std::string& name, std::shared_ptr<Directory> dest){
+    if(name == "." || name == "..") return false;
+    auto it = this->children.find(name);
+    if(it == this->children.end()) return false;
+
+    //il padre di mio figlio sarà destinazione
+    std::shared_ptr<Base> base_child = it->second;
+    if(base_child->mType()==1){
+        std::shared_ptr<File> source_child = dynamic_pointer_cast<File>(base_child);
+        //File* f = source_child.get(); //ritorna il puntatore nativo al tipo
+        std::shared_ptr<File> dest_child = std::make_shared<File>(*source_child); //potevo mettere anche *f
+        std::shared_ptr<Base> child = static_pointer_cast<Base>(dest_child);
+        dest->children.insert(std::pair<std::string, std::shared_ptr<Base>>(name, child));
+    } else {
+
+    }
+}
+void Directory::ls(int indent) const{
 
 }
-bool Directory::move(const std::string &name, Directory* target){
-
-}
-int mType() const override;
-void ls(int indent) const override;
