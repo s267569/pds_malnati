@@ -11,7 +11,7 @@
 
 class Directory : public Base {
     static Directory* root;
-    std::map<std::string, Base*> children;
+    std::map<std::string, std::shared_ptr<Base>> children;
     std::weak_ptr<Directory> parent;
     std::weak_ptr<Directory> self;
     Directory() = delete;
@@ -24,9 +24,9 @@ public:
     //static bool removeRoot();
     std::shared_ptr<Directory> addDirectory(const std::string& name);
     std::shared_ptr<File> addFile(const std::string & name, uintmax_t size, uintmax_t data);
-    Base* get(const std::string & name);
-    Directory* getDirectory(const std::string & name);
-    File* getFile(const std::string & name);
+    std::shared_ptr<Base> get(const std::string & name);
+    std::shared_ptr<Directory> getDirectory(const std::string & name);
+    std::shared_ptr<File> getFile(const std::string & name);
     bool remove(const std::string & name);
     bool move(const std::string &name, Directory* target);
     int mType() const override;
