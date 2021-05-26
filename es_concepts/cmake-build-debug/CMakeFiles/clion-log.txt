@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/clang -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab2_smartPointer"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/clang -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/es_concepts"
 -- The C compiler identification is AppleClang 11.0.3.11030032
 -- The CXX compiler identification is AppleClang 11.0.3.11030032
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab2_smartPointer/cmake-build-debug
+-- Build files have been written to: /Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/es_concepts/cmake-build-debug

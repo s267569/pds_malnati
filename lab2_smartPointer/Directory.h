@@ -19,6 +19,8 @@ class Directory : public Base {
 public:
     //explicit è semplicemente per marcare un costruttore che ha un solo parametro per rendere chiara la sintassi
     explicit Directory(std::string name);
+    Directory(const Directory& source);
+    Directory(Directory&& source);
     ~Directory() noexcept;
     static std::shared_ptr<Directory> getRoot();
     std::shared_ptr<Directory> addDirectory(const std::string& name);
