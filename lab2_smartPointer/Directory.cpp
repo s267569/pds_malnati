@@ -21,6 +21,7 @@ Directory::Directory(const Directory& source) : Base(source.getName()){
         } else {
             std::shared_ptr<Directory> dir_child = dynamic_pointer_cast<Directory>(base_child);
             std::shared_ptr<Directory> dest_dir_child = std::make_shared<Directory>(*dir_child);
+            dest_dir_child->self = dest_dir_child;
             std::shared_ptr<Base> dest_child = static_pointer_cast<Base>(dest_dir_child);
             this->children.insert(std::pair<std::string, std::shared_ptr<Base>>(base_child->getName(), dest_child));
         }
@@ -127,7 +128,12 @@ bool Directory::copy(const std::string& name, std::shared_ptr<Directory> dest){
         std::shared_ptr<Base> child = static_pointer_cast<Base>(dest_child);
         dest->children.insert(std::pair<std::string, std::shared_ptr<Base>>(name, child));
     } else {
-
+        std::shared_ptr<Directory> source_child = dynamic_pointer_cast<Directory>(base_child);
+        std::shared_ptr<Directory> dest_child = std::make_shared<Directory>(*source_child);
+        dest_child->self = dest_child;
+        dest_child->parent = dest;
+        std::shared_ptr<Base> child = static_pointer_cast<Base>(dest_child);
+        dest->children.insert(std::pair<std::string, std::shared_ptr<Base>>(name, child));
     }
 }
 void Directory::ls(int indent) const{
