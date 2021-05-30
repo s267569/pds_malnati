@@ -142,6 +142,33 @@ lab5_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_1.dir/build.make CMakeFiles/lab5_1.dir/build
 .PHONY : lab5_1/fast
 
+LockGuard.o: LockGuard.cpp.o
+
+.PHONY : LockGuard.o
+
+# target to build an object file
+LockGuard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_1.dir/build.make CMakeFiles/lab5_1.dir/LockGuard.cpp.o
+.PHONY : LockGuard.cpp.o
+
+LockGuard.i: LockGuard.cpp.i
+
+.PHONY : LockGuard.i
+
+# target to preprocess a source file
+LockGuard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_1.dir/build.make CMakeFiles/lab5_1.dir/LockGuard.cpp.i
+.PHONY : LockGuard.cpp.i
+
+LockGuard.s: LockGuard.cpp.s
+
+.PHONY : LockGuard.s
+
+# target to generate assembly for a file
+LockGuard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_1.dir/build.make CMakeFiles/lab5_1.dir/LockGuard.cpp.s
+.PHONY : LockGuard.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab5_1"
+	@echo "... LockGuard.o"
+	@echo "... LockGuard.i"
+	@echo "... LockGuard.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
