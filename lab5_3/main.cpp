@@ -2,7 +2,9 @@
 #include <mutex>
 #include <thread>
 #include <condition_variable>
-
+#include <string>
+#include <fstream>
+#include <vector>
 class CountingSemaphore{
     int count;
     std::mutex m;
@@ -16,9 +18,10 @@ public:
     }
     void acquire(){
         std::unique_lock<std::mutex> lk(m);
-        if(count <=0){
+        while(count <=0){
             cv.wait(lk);
-        }else{
+        }
+        if (count >0){
             count --;
             return;
         }
@@ -29,7 +32,27 @@ public:
         cv.notify_one();
     }
 };
+
+void find_p (std::string str, std::ifstream ifs, CountingSemaphore s, std::mutex &mkfind){
+    s.acquire();
+    char line[200];
+    std::unique_lock<std::mutex> lkfind(mkfind);
+    if(ifs.getline(line, 200)){
+        lkfind.unlock();
+        std::string s = line;
+        s.find(str);
+        std::cout << "Trovata" << std::endl;
+    }
+    s.release();
+}
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    CountingSemaphore cs(4);
+    std::string line = "ciao";
+    std::mutex mkfind;
+    std::ifstream ifs("/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_3/test.txt");
+
+    std::thread t1(find_p, line, ifs, cs, std::ref(mkfind));
+
+
     return 0;
 }
