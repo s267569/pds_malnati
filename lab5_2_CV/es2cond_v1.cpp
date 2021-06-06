@@ -15,6 +15,12 @@ bool ready = false;
 
 void f1(){
     for(int i=0; i<max_n; i++){
+
+        //il while di seguito è molto pericolosa, la soluzione sarebbe metterlo dopo riga 22
+        while(ready){
+            std::this_thread::sleep_for(std::chrono::duration<int, std::milli>(rand() % 1000));
+        }
+        std::cout << "f1()" << std::endl;
         std::lock_guard<std::mutex> lg(m);
         count++;
         ready=true;
@@ -27,6 +33,7 @@ void f2(){
         std::unique_lock<std::mutex> ul(m);
         if (ready == false) //dato non pronto ==> ci mettiamo in attesa
             cv.wait(ul, [](){return ready;}); //è = a dire return ready==true;
+        std::cout << "f2()" << std::endl;
         int res = count%rest;
         tot+=res;
         ready = false;

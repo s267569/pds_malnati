@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named es2
+
+# Build rule for target.
+es2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 es2
+.PHONY : es2
+
+# fast build rule for target.
+es2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/es2.dir/build.make CMakeFiles/es2.dir/build
+.PHONY : es2/fast
+
+#=============================================================================
 # Target rules for targets named lab5_2_CV
 
 # Build rule for target.
@@ -142,32 +155,62 @@ lab5_2_CV/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/build
 .PHONY : lab5_2_CV/fast
 
-main.o: main.cpp.o
+es2_v2.o: es2_v2.cpp.o
 
-.PHONY : main.o
+.PHONY : es2_v2.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/main.cpp.o
-.PHONY : main.cpp.o
+es2_v2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/es2.dir/build.make CMakeFiles/es2.dir/es2_v2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o
+.PHONY : es2_v2.cpp.o
 
-main.i: main.cpp.i
+es2_v2.i: es2_v2.cpp.i
 
-.PHONY : main.i
+.PHONY : es2_v2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/main.cpp.i
-.PHONY : main.cpp.i
+es2_v2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/es2.dir/build.make CMakeFiles/es2.dir/es2_v2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.i
+.PHONY : es2_v2.cpp.i
 
-main.s: main.cpp.s
+es2_v2.s: es2_v2.cpp.s
 
-.PHONY : main.s
+.PHONY : es2_v2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/main.cpp.s
-.PHONY : main.cpp.s
+es2_v2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/es2.dir/build.make CMakeFiles/es2.dir/es2_v2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.s
+.PHONY : es2_v2.cpp.s
+
+es2cond_v1.o: es2cond_v1.cpp.o
+
+.PHONY : es2cond_v1.o
+
+# target to build an object file
+es2cond_v1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o
+.PHONY : es2cond_v1.cpp.o
+
+es2cond_v1.i: es2cond_v1.cpp.i
+
+.PHONY : es2cond_v1.i
+
+# target to preprocess a source file
+es2cond_v1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.i
+.PHONY : es2cond_v1.cpp.i
+
+es2cond_v1.s: es2cond_v1.cpp.s
+
+.PHONY : es2cond_v1.s
+
+# target to generate assembly for a file
+es2cond_v1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_2_CV.dir/build.make CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.s
+.PHONY : es2cond_v1.cpp.s
 
 # Help Target
 help:
@@ -177,10 +220,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... es2"
 	@echo "... lab5_2_CV"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... es2_v2.o"
+	@echo "... es2_v2.i"
+	@echo "... es2_v2.s"
+	@echo "... es2cond_v1.o"
+	@echo "... es2cond_v1.i"
+	@echo "... es2cond_v1.s"
 .PHONY : help
 
 

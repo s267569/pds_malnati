@@ -17,6 +17,48 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="es2">
+				<Option output="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/es2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 es2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es2/fast">
+				<Option output="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/es2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 es2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/domenicocefalo/Dropbox\ (Politecnico\ Di\ Torino\ Studenti)/Programmazione\ di\ sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug"/>
 				<Option type="4"/>
@@ -80,7 +122,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/main.cpp">
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2_v2.cpp">
+			<Option target="es2"/>
+			<Option target="lab5_2_CV"/>
+		</Unit>
+		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2cond_v1.cpp">
 			<Option target="lab5_2_CV"/>
 		</Unit>
 		<Unit filename="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/CMakeLists.txt">

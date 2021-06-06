@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/lab5_2_CV.dir/main.cpp.o -o lab5_2_CV 
+/Library/Developer/CommandLineTools/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o -o lab5_2_CV 

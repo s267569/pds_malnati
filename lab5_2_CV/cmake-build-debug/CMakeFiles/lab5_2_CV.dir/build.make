@@ -76,30 +76,45 @@ include CMakeFiles/lab5_2_CV.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab5_2_CV.dir/flags.make
 
-CMakeFiles/lab5_2_CV.dir/main.cpp.o: CMakeFiles/lab5_2_CV.dir/flags.make
-CMakeFiles/lab5_2_CV.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab5_2_CV.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_2_CV.dir/main.cpp.o -c "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/main.cpp"
+CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o: CMakeFiles/lab5_2_CV.dir/flags.make
+CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o: ../es2cond_v1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o -c "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2cond_v1.cpp"
 
-CMakeFiles/lab5_2_CV.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_2_CV.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/main.cpp" > CMakeFiles/lab5_2_CV.dir/main.cpp.i
+CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2cond_v1.cpp" > CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.i
 
-CMakeFiles/lab5_2_CV.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_2_CV.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/main.cpp" -o CMakeFiles/lab5_2_CV.dir/main.cpp.s
+CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2cond_v1.cpp" -o CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.s
+
+CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o: CMakeFiles/lab5_2_CV.dir/flags.make
+CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o: ../es2_v2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o -c "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2_v2.cpp"
+
+CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2_v2.cpp" > CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.i
+
+CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/es2_v2.cpp" -o CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.s
 
 # Object files for target lab5_2_CV
 lab5_2_CV_OBJECTS = \
-"CMakeFiles/lab5_2_CV.dir/main.cpp.o"
+"CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o" \
+"CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o"
 
 # External object files for target lab5_2_CV
 lab5_2_CV_EXTERNAL_OBJECTS =
 
-lab5_2_CV: CMakeFiles/lab5_2_CV.dir/main.cpp.o
+lab5_2_CV: CMakeFiles/lab5_2_CV.dir/es2cond_v1.cpp.o
+lab5_2_CV: CMakeFiles/lab5_2_CV.dir/es2_v2.cpp.o
 lab5_2_CV: CMakeFiles/lab5_2_CV.dir/build.make
 lab5_2_CV: CMakeFiles/lab5_2_CV.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab5_2_CV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_2_CV/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lab5_2_CV"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab5_2_CV.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
