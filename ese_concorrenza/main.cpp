@@ -42,6 +42,8 @@ public:
 };
 
 int main() {
+    std::cout << std::thread::hardware_concurrency()<<std::endl;
+
     CountDownLatch cl(3);
 
     for (int i=0; i< 5; i++){ //creo un po' di thread
@@ -60,5 +62,7 @@ int main() {
         std::cout << "Current count is " << cl.getCount() << std::endl;
         std::cout.flush();
     }
+
+
     return 0;
 }
