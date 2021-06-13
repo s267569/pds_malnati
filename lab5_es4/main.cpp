@@ -35,7 +35,7 @@ int main() {
             std::string time_s = s_line.substr(0, first_space);
             int time_ms = std::stoi(time_s);
             std::string::size_type second_space = s_line.find(' ', first_space+1);
-            std::string source_path = s_line.substr(first_space+1, second_space);
+            std::string source_path = s_line.substr(first_space+1, second_space - first_space);
             std::string dest_path = s_line.substr(second_space+1);
 
             std::chrono::duration<int, std::milli> wake_up{time_ms};
