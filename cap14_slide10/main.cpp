@@ -10,7 +10,7 @@ int parallel_sum(Iter begin, Iter end){
         return std::accumulate(begin, end, 0);
     Iter mid = begin+len/2;
     auto handle = std::async(std::launch::async, parallel_sum<Iter>, mid, end);
-    int sum= parallel_sum(begin, mid);
+    int sum = parallel_sum(begin, mid);
     return sum+handle.get();
 }
 
