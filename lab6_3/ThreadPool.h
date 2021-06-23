@@ -4,6 +4,7 @@
 
 #ifndef LAB6_3_THREADPOOL_H
 #define LAB6_3_THREADPOOL_H
+
 #include <mutex>
 #include <condition_variable>
 #include <future>
@@ -22,11 +23,9 @@ class ThreadPool {
 public:
     ThreadPool() = delete;
     ThreadPool(int min_threads, int max_threads, int max_size);
-    void execute(std::packaged_task<void()> task);
+    void execute(std::packaged_task<void()>&& task); //Lo marchiamo con RVALUE reference in modo che anche il main che ci chiama deve sapere che deve muoverlo e non copiarlo
     void finish();
     ~ThreadPool();
 
 };
-
-
 #endif //LAB6_3_THREADPOOL_H
