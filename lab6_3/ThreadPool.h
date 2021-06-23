@@ -8,6 +8,8 @@
 #include <condition_variable>
 #include <future>
 #include <deque>
+#include <vector>
+#include <thread>
 
 class ThreadPool {
     int min_threads_,max_threads_,max_size_;
@@ -15,6 +17,8 @@ class ThreadPool {
     std::deque<std::packaged_task<void()>> tasks;
     std::mutex m_tasks;
     std::condition_variable cv_task_ready;
+    std::vector<std::thread> executors;
+
 public:
     ThreadPool() = delete;
     ThreadPool(int min_threads, int max_threads, int max_size);

@@ -12,4 +12,4 @@ ThreadPool::ThreadPool(int min_threads, int max_threads, int max_size) : min_thr
 }
 void execute(std::packaged_task<void()> task);
 void finish();
-~ThreadPool();
+ThreadPool::~ThreadPool();
