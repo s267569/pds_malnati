@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/domenicocefalo/Dropbox (Politecnico Di Torino Studenti)/Programmazione di sistema/Malnati/pds_malnati/lab5_es4/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+tuple
+-
+queue
+-
+vector
+-
+chrono
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+
