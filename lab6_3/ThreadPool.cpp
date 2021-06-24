@@ -8,13 +8,12 @@ ThreadPool::ThreadPool(int min_threads, int max_threads, int max_size) : min_thr
     active_threads=0;
     active=true;
     auto execution = [this](){
-            while(active) {
+            std::unique_lock ul{m_tasks};
+            while(active || !tasks.empty()) {
                 //operare sulla coda è la sezione critica, l'operazione sul packaged_trask invece è una operazione che
                 //posso eseguire contemporaneamente agli altri
-                std::unique_lock ul{m_tasks};
                 cv_task_ready.wait(ul,[&]() { return !tasks.empty()||!active;}); //catturo per reference: catturo tutto ciò di prima per reference.
-                if(!active) break;
-
+                if(!active && tasks.empty()) break;
                 //potevo anche catturare anche solo &tasks.
                 //La pop in C++ va sempre fatta in due passaggi
                 std::packaged_task<void()> task_to_execute = std::move(
