@@ -15,6 +15,7 @@
 class ThreadPool {
     int min_threads_,max_threads_,max_size_;
     int active_threads;
+    bool active;
     std::deque<std::packaged_task<void()>> tasks;
     std::mutex m_tasks;
     std::condition_variable cv_task_ready;
