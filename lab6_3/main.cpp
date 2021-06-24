@@ -17,10 +17,10 @@ int main() {
         return_values.emplace_back(task.get_future());
         tp.execute(std::move(task));
     }
-
+    tp.finish();
     for(std::future<void> & future: return_values){
         future.wait();
-        std::cout << "Future (unknows number) finished\n";
+        std::cout << "Future (unknown number) finished\n";
     }
 
     std::cout << "Main program finished\n";

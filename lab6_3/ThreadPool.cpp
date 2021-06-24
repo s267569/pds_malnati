@@ -40,6 +40,7 @@ void ThreadPool::finish(){
     std::unique_lock ul{m_tasks};
     active = false;
     cv_task_ready.notify_all();
+    ul.unlock();
     for(std::thread& t:executors){
         t.join();
     }
