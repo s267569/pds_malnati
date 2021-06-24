@@ -19,6 +19,7 @@ class ThreadPool {
     std::deque<std::packaged_task<void()>> tasks;
     std::mutex m_tasks;
     std::condition_variable cv_task_ready;
+    std::condition_variable cv_queue;
     std::vector<std::thread> executors;
 
 public:
